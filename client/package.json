@@ -1,8 +1,12 @@
 {
   "name": "client",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "clean": "rimraf dist",
@@ -26,7 +30,8 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
     "autoprefixer": "^10.4.13",
-    "cypress": "^12.14.0",
+    "cypress": "^15.0.0",
+    "cypress-file-upload": "^5.0.8",
     "eslint": "^8.42.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",

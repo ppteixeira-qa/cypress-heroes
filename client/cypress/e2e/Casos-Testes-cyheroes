@@ -1,0 +1,64 @@
+===============================================
+        CASOS DE TESTE – cy.heroes
+===============================================
+
+1. VISÃO GERAL
+--------------
+O cy.heroes é uma aplicação para gerenciamento de heróis, permitindo criar, editar, excluir e listar personagens, além de atribuir poderes, preço de venda e quantidade de fãs.
+
+Os testes foram organizados do modo a verificar se as funcionalidades principais funcionam conforme esperado e validam o comportamento do sistema diante de entradas inválidas. Também analisa se a interface (UX/UI) está responsiva.
+
+------------------------------------------------
+2. CASOS DE TESTE FUNCIONAIS
+------------------------------------------------
+CT-001 - Criar herói com sucesso e com um poder
+Pré-condições: App na tela de cadastro
+Passos:
+1. Preencher Nome com "Chapolin Colorado"
+2. Preencher Preço com "50"
+3. Preencher Fãs com "80"
+3. Selecionar poder "Super Força"
+4. Clicar em Salvar
+
+Resultado esperado: Mensagem de sucesso exibida e herói listado na tabela
+
+CT-002 - Editar herói existente
+Pré-condições: Herói "Chapolin Colorado" cadastrado
+Passos:
+1. Localizar "Chapolin Colorado" na lista
+2. Clicar em Editar
+3. Alterar preço para "90"
+4. Salvar
+
+Resultado esperado: Preço atualizado na lista
+
+CT-003 - Excluir herói
+Pré-condições: Herói "Chapolin Colorado" cadastrado
+Passos:
+1. Localizar "Chapolin Colorado" na lista
+2. Clicar em Excluir
+3. Confirmar
+Resultado esperado: Herói removido da lista
+
+CT-004 - Selecionar mais de um poder
+Pré-condições: Tela de cadastro aberta
+Passos:
+1. Preencher Nome com "Dragon ball"
+2. Preencher Preço com "120"
+3. Preencher Fãs com "80"
+4. Selecionar múltiplos poderes ("Bola de Fogo", "Voar", "Super Força" e "Velocidade")
+5. Salvar
+Resultado esperado: Herói criado com todos os poderes visíveis
+
+CT-005 - Listar todos os heróis
+Pré-condições: Pelo menos 1 herói cadastrado
+Passos:
+1. Acessar página inicial
+Resultado esperado: Lista exibe todos os heróis cadastrados
+
+------------------------------------------------
+2. OBSERVAÇÕES
+------------------------------------------------
+- Os testes serão realizados em modo manual e automatizado com Cypress + Typescript.
+- Cenários negativos ajudam a validar regras de negócio e evitar falhas.
+- O documento deve ser atualizado conforme novas funcionalidades sejam adicionadas.

@@ -1,16 +1,18 @@
-===============================================
-        CASOS DE TESTE – cy.heroes
-===============================================
+#        CASOS DE TESTE – cy.heroes
+        
 
 1. VISÃO GERAL
 --------------
+
 O cy.heroes é uma aplicação para gerenciamento de heróis, permitindo criar, editar, excluir e listar personagens, além de atribuir poderes, preço de venda e quantidade de fãs.
+
 
 Os testes foram organizados do modo a verificar se as funcionalidades principais funcionam conforme esperado e validam o comportamento do sistema diante de entradas inválidas. Também analisa se a interface (UX/UI) está responsiva.
 
 ------------------------------------------------
 2. CASOS DE TESTE FUNCIONAIS
 ------------------------------------------------
+
 CT-001 - Criar herói com sucesso e com um poder
 Pré-condições: App na tela de cadastro
 Passos:
@@ -38,6 +40,7 @@ Passos:
 1. Localizar "Chapolin Colorado" na lista
 2. Clicar em Excluir
 3. Confirmar
+
 Resultado esperado: Herói removido da lista
 
 CT-004 - Selecionar mais de um poder
@@ -48,12 +51,14 @@ Passos:
 3. Preencher Fãs com "80"
 4. Selecionar múltiplos poderes ("Bola de Fogo", "Voar", "Super Força" e "Velocidade")
 5. Salvar
+
 Resultado esperado: Herói criado com todos os poderes visíveis
 
 CT-005 - Listar todos os heróis
 Pré-condições: Pelo menos 1 herói cadastrado
 Passos:
 1. Acessar página inicial
+
 Resultado esperado: Lista exibe todos os heróis cadastrados
 
 ------------------------------------------------
